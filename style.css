@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+body {
+  background-image: url("images/homepage.jpg");
+  background-size: cover;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #ffffff;
+  font-family: "Raleway";
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+}
+
+#center_area {
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#center_area h5 {
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-align: center;
+  font-family: "Raleway";
+  margin: 0px;
+}
+
+#center_area p {
+  text-align: center;
+  font-family: "Raleway";
+  line-height: 1;
+  font-size: 11.5px;
+  margin-top: 9px;
+}
+
+#header_area {
+  padding: 15px;
+}
+
+.navbar {
+  justify-content: center;
+  font-family: "Raleway";
+  font-size: 12px;
+  justify-content: space;
+}
+
+.navbar ul {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.navbar ul li a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding: 10px;
+  transition: all ease 0.3s;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.navbar ul li:hover a {
+  color: #e0b26b;
+}
+
+.navbar ul li.dropdown ul {
+  background-color: #fff;
+  position: absolute;
+  padding: 10px;
+  min-width: 1px;
+  display: none;
+  z-index: 1;
+  font-size: 0.6rem;
+  text-align: left;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+}
+
+.navbar ul li.dropdown ul li {
+  display: block;
+}
+.navbar ul li.dropdown ul li a {
+  color: #00000094;
+  padding: 0;
+}
+
+.navbar ul li.dropdown:hover ul {
+  display: block;
+  justify-content: center;
+}
+
+.dropdown ul:before {
+  content: "";
+  position: absolute;
+  border-color: rgba(194, 225, 245, 0);
+  border: solid transparent;
+  border-bottom-color: white;
+  border-width: 11px;
+  top: -21px;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+
+.dropdown ul:after {
+  content: "";
+  position: absolute;
+  border-color: rgba(194, 225, 245, 0);
+  border: solid transparent;
+  border-bottom-color: white;
+  border-width: 11px;
+  top: -21px;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+
+.navbar ul li.dropdown ul li:hover a {
+  color: black;
+}
+
+.navbar .left > li:after {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background: white;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.navbar .right > li:before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background: white;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.social_area {
+  width: 100%;
+  clear: both;
+}
+
+.social_area ul {
+  margin: 0;
+  padding: 0;
+}
+
+.social_area ul li {
+  display: inline;
+}
+
+.social_area ul li a {
+  text-align: center;
+  color: #fff;
+  transition: 0.5s;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  font-size: 12px;
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.social_area ul li a:hover {
+  background: none;
+}
+
+.social_area .col-md-6 {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 0 60px;
+}
+
+.logo img {
+  width: 110px;
+  height: auto;
+}
+
+html {
+  font-family: "Raleway";
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+p {
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: "Raleway";
+}
+
+#copyright {
+  padding: 30px 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+#copyright p {
+  margin: 0;
+  font-size: 12px;
+  color: #fefefe;
+}
+
+#copyright .col-md-6:last-child {
+  width: 400px;
+  height: 81px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Raleway";
+  text-align: right;
+}
+
+.widget_vantage-social-media {
+  text-align: center;
+}
+
+.menu-shadow-item {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  transition: background-color 0.2s ease;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-shadow-item:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
